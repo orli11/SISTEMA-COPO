@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Sistema COPO Textil</title>
+    <meta name="description" content="Sistema copo textil">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="contenedor">
+      <div class="seccion-img">
+        <div class="img-wrapper">
+          <img src="./img/img-fondo.png" alt="fondo login">
+        </div>
+        
+        <div class="contenedor-contenido">
+          <h1 class="seccion-titulo">
+            Grupo Copo
+            <span>Planta México</span>
+          </h1>
+          <p class="seccion-parrafo">Copo Textile México S.A. de CV
+            Av. Mina de Calderones, 200 B, Parque Ind. Santa Fe Ampliacion
+            Silao, Guanajuato
+            36275 México
+          </p>
+        </div>
+      </div>
+
+      <div class="seccion-formulario">
+        <div class="formulario-wrapper">
+          <div class="logo-contenedor">
+            <a href="#" class="logo-contenedor">
+              <img src="./img/logocopo.png" alt="logo COPO">
+            </a>
+          </div>
+
+          <h2>Zona Privada</h2>
+          <p>Ingrega con tu acceso de empleado o directivo.</p>
+          <div class="input-contenedor">
+            <div class="grupo-formulario">
+              <label for="email">Email</label>
+              <input type="email" id="email" autocomplete="off" required>
+            </div>
+
+            <div class="grupo-formulario">
+              <label for="password">Contraseña</label>
+              <input type="password" id="password">
+            </div>
+
+            <button class="login-btn">Iniciar Sesión</button>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
