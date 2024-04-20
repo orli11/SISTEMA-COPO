@@ -9,8 +9,7 @@ const createWindow = () => {
         },
         show: true
     })
-
     window.loadFile('index.html')
 }
+app.whenReady().then(() => { createWindow() })
 
-app.whenReady().then(() => { createWindow() } )
