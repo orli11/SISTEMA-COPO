@@ -36,6 +36,7 @@ a {
 }
 h1, h2, h3, h4 {
     font-family: var(--fuenteHeading);
+    color: var(--naranja);
 }
 h1 {
     font-size: 4.8rem;
@@ -99,4 +100,46 @@ img {
     width: 24px; /* Ancho del ícono */
     height: 24px; /* Altura del ícono */
     margin-right: 8px; /* Margen a la derecha del ícono para separarlo del texto */
+}
+@media (min-width: 768px) {
+    .contenido__principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    
+}
+.entrada {
+    border-bottom: 1px solid var(--grisClaro);
+    margin: 2rem;
+}
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+
+
+.anuncios {
+    list-style: none;
+}
+
+.widget-anuncio {
+    border-bottom: 1px solid var(--grisClaro);
+    margin-bottom: 2rem;
+}
+.widget-anuncio:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.widget-anuncio__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.widget-anuncio__info {
+    font-weight: normal;
+}
+.widget-anuncio__label,
+.widget-anuncio__info {
+    font-size: 2rem;
 }
