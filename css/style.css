@@ -155,9 +155,7 @@ img {
     min-height: 100vh;
     width: 100%;
     height: 100%;
-
-    
-    background-image: url(../img/img-fondo.png);
+    background-image: url(../img/fondo-copo1.png);
     background-position: center;
     background-size: cover;
 }
@@ -169,6 +167,7 @@ img {
     min-width: 38rem;
     max-width: 90rem;
     width: 90%;
+    opacity: .8;
     background-color: var(--azul);
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -191,8 +190,6 @@ img {
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
-    opacity: 1;
-    filter: alpha(opacity=1);
 }
 .login label {
     display: block;
@@ -236,8 +233,6 @@ img {
 .contendio-formulario {
     text-align: center;
     width: 100%;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
     padding:20px 20px 20px 50px;
 }
 .titulo-formulario {
@@ -258,9 +253,8 @@ img {
 }
 
 .pie-formulario a:hover {
-    color: var(--grisClaro);
+    color: var(--naranja);
 }
-/* Media queries */
 @media (max-width: 768px) {
     .contenedor-centrado {
       flex-direction: column;
@@ -271,7 +265,6 @@ img {
       margin-top: 20px;
     }
   }
-
 @media (max-width: 480px) {
     .login {
         padding: 10px;
