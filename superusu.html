@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Director General</title>
+
+    <meta name="description" content="Sistema copo textil">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+</html>
+<body>
+  <header class="header">
+    <div class="contenedor">
+        <div class="barra">
+            <a class="logo" href="index.html">
+                <img src="./img/logo-blanco.png" alt="Copo Logo">
+            </a>
+
+            <nav class="navegacion">
+              <a href="login.html" class="navegacion__enlace">
+                Cerrar Sesión 
+              </a>
+            </nav>
+        </div>
+    </div>
+  </header>
+  <div class="dashboard">
+    <aside class="sidebar-usu">
+      <nav class="sidebar-usu__nav">
+        <a href="#" class="sidebar-usu__link">Registros</a>
+        <a href="#" class="sidebar-usu__link">Reportes</a>
+        <a href="#" class="sidebar-usu__link">Actividades</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <section id="overview" class="content-section">
+        <h1>Ubicaciones</h1>
+        <div class="entrada__imagen">
+          <img src="img/Ubicaciones.png" alt="Textiles Auto">
+        </div>
+        <p>Contenido de Overview...</p>
+      </section>
+      <section id="reports" class="content-section">
+        <h1>Personal y negocio</h1>
+        <div class="grafica-container">
+            <div class="grafica-1">
+                <img src="img/personal-g1.png" alt="Textiles Auto">
+            </div>
+            <div class="grafica-2">
+                <img src="img/economia-g1.png" alt="Textiles Auto">
+            </div>
+        </div>
+    </section>
+    </main>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./js/index.js"></script>
+</html>
